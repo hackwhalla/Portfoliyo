@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Goyal - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Poppins (Import bold weights for better control) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar-content">
+            <!-- Logo with gradient text -->
+            <h1 class="logo">
+                <a href="#home" class="nav-link" data-section="home">
+                    <span class="gradient-text-logo">Adarsh Goyal</span>
+                </a>
+            </h1>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                    <li><a href="certificate_index.html" class="nav-link" data-section="Certificates">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu (hidden by default) -->
+    <nav class="mobile-nav-menu">
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link" data-section="home">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link" data-section="about">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a></li>
+            <li><a href="certificate_index.html" class="mobile-nav-link" data-section="Certificates">Certificates</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <!-- Text on Left -->
+                <div class="hero-text">
+                    <h2>Hello, I'm <span class="gradient-text">Adarsh Goyal</span></h2>
+                    <!-- Dynamic typing effect for roles -->
+                    <div class="hero-roles">
+                        <span id="role-typing-text" class="typing-text"></span><span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">Designing intelligent software with Python, TensorFlow, OpenCV, and deep learning. I build solutions, not just models.</p>
+                    <div class="hero-buttons">
+                        <a href="my resume.pdf" download class="btn btn-outline">
+                            Download Resume <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-primary smooth-scroll">Get In Touch</a>
+                    </div>
+                </div>
+                <!-- Image on Right -->
+                <div class="hero-image">
+                    <img src="img2.jpg" alt="Ayushi Kumari Profile" class="profile-pic">
+                </div>
+            </div>
+            <!-- Scroll to explore -->
+            <a href="#about" class="scroll-down-arrow smooth-scroll">
+                Scroll to explore <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section common-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content-grid">
+                    <div class="about-card journey-card">
+                        <h3 class="card-title purple-text">My Journey</h3>
+                        <p>I'm Adarsh Goyal, a Electrical Engineering student at Madhav Institute of Technology and Science(2023–2027), passionate about building intelligent systems using AI, machine learning, and computer vision. I specialize in developing real-time, data-driven applications using tools like TensorFlow, OpenCV, and NLP frameworks. With a strong focus on problem-solving and a drive to solve real-world challenges, I aspire to become a Data Scientiest — and go beyond that by continuously learning and creating tech-driven change.</p>
+                        <p>I love working in a team environment and also bring strong leadership capabilities to any project I’m part of. Outside the world of tech, I’m also an athlete, which helps me stay disciplined, focused, and goal-oriented in every aspect of life.</p>
+                    </div>
+                    <div class="about-right-column">
+                        <div class="about-card status-card">
+                            <h3 class="card-title blue-text">Current Status</h3>
+                            <div class="status-item">
+                                <i class="fas fa-briefcase status-icon"></i>
+                                <span>Exploring internship opportunities for 2026</span>
+                            </div>
+                        </div>
+                        <div class="about-card languages-card">
+                            <h3 class="card-title">Languages</h3>
+                            <div class="language-item">
+                                <span>English</span>
+                                <span class="language-tag">Proficient</span>
+                            </div>
+                            <div class="language-item">
+                                <span>Hindi</span>
+                                <span class="language-tag">Native</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Real life project -->
+        <section id="projects" class="projects-section common-section">
+            <div class="container">
+                <h2 class="section-title">Advance Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                            <video autoplay loop muted playsinline>
+                                <source src="health care.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Health Care AI model for Seasonal Desease</h3>
+                       <a href="https://sumitrathor.rf.gd/helpinghut/?i=1"> <p>A Health Care AI Model for seasonal desease. it contain 20 desease and provide solution of it (Ayurvedic medicine, Exerise, Home Remedies) and a AI(Gemini implemented) chat bot support for additional knowledge</p>
+                        <div class="project-links">
+                            <a href="https://github.com/hackwhalla/HealthCare_AI_model" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                            <video autoplay loop muted playsinline>
+                                <source src="mini bot.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>AI implemented MINI BOT controlled by Voice command</h3>
+                        <p>a smart voice-controlled AI assistant Bot capable of performing a wide range of personal and system tasks such as sending emails/WhatsApp messages, browsing web platforms, media control, system operations (shutdown/restart), and realtime utilities like weather, location, battery, and internet speed checks. Integrated Gemini API for open-world knowledge and human-like conversational abilities.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/hackwhalla/Mini-bot-using-Arduino-and-voice-assistance-AI-prototype" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                             <video autoplay loop muted playsinline>
+                                <source src="nest word.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Nest Word Predictor</h3>
+                        <p>Developed a real-time next-word prediction engine mimicking Android's smart keyboard suggestions. The system intelligently predicts the next three possible words based on the entire sequence of previously typed words using an LSTM-based deep learning model.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/hackwhalla/Nest-word-predictor" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects-section common-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                           <video autoplay loop muted playsinline>
+                                <source src="jarvis.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Voice Assistance</h3>
+                        <p>an AI assistant prototype with voice command control, inbuilt voice response, and face detection security. Capable of performing diverse personal and system-level tasks including emailing, web browsing, media control, automation (WhatsApp, alarms), device operations (shutdown, screenshot, volume control), and integration with Gemini API for realtime open-world knowledge access. Designed to simulate human-like interaction and enhance user productivity.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/hackwhalla/Voice-assistance" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                             <video autoplay loop muted playsinline>
+                                <source src="Face Recognition Attendance System.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Face detection Security System</h3>
+                        <p>Developed a Python application for Security leveraging Python and OpenCV, facilitating accurate and efficient Security with image processing technology.</p>
+                         <div class="project-links">
+                            <a href="https://github.com/hackwhalla/Face-detection-security-system" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                            <video autoplay loop muted playsinline>
+                                <source src="Customer Support Chatbot.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Customer Support Chatbot</h3>
+                        <p>Smart Customer Support Chatbot powered by Gemini, providing context-aware, multi-domain assistance across healthcare, banking, e-commerce, and finance.</p>
+                        <div class="project-links">
+                             <a href="https://github.com/hackwhalla/CodeAlpha_Task-3__FAQ_bot_for_specific_things__" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                             <video autoplay loop muted playsinline>
+                                <source src="Face Recognition Attendance System.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Face Recognition Attendance System</h3>
+                        <p>Developed a Python application for about 3 persons leveraging Python and OpenCV, facilitating accurate and efficient attendance tracking image processing technology.</p>
+                         <div class="project-links">
+                            <a href="https://github.com/hackwhalla/Face-detection-security-system" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                             <video autoplay loop muted playsinline>
+                                <source src="
+                                    recipe analysis.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Recipe Site Traffic analysis and Prediction</h3>
+                        <p>A online rastaurant Recipe site analysis and prediction of Dishes for increasing their sales and subscription on their website.</p>
+                         <div class="project-links">
+                            <a href="https://github.com/hackwhalla/Recipe-site-traffic-prediction" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section common-section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-blue-gradient">
+                                <i class="fas fa-code skill-icon"></i>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>C++</span><span>Python</span><span>HTML</span><span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-green-solid">
+                                <i class="fas fa-globe skill-icon"></i>
+                            </div>
+                            <h3>Frameworks & Libraries</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>TensorFlow</span><span>Keras</span><span>Opencv</span><span>Hugging Face</span><span>Langchain</span><span>Flask</span><span>Streamlit</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-orange-red-gradient">
+                                <i class="fas fa-brain skill-icon"></i>
+                            </div>
+                            <h3>AI & Machine Learning</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>BERT</span><span>GPT</span><span>LLaMA</span><span>RAG Agents</span><span>Gen AI</span><span>Agentic AI</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-red-pink-gradient">
+                                <i class="fas fa-users skill-icon"></i>
+                            </div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Team Management</span><span>Communication</span><span>Problem Solving</span><span>Creative Thinking</span><span>Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section common-section">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-intro">Reach out to me through my social channels or send an email.</p>
+                <div class="contact-links">
+                    <a href="https://github.com/hackwhalla?tab=repositories" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adarsh-goyal-a35297230/" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/mr.goyalll?igsh=aWM0NThlMXd5dXk3" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="mailto:goyaladarsh49@gmail.com" class="contact-link-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-top-text">
+                <p>Machine Learning Engineer & AI Enthusiast passionate about building intelligent systems that solve real-world problems and create meaningful impact.</p>
+            </div>
+            <div class="footer-bottom-row">
+                <p>@ Deployed with <span class="heart-emoji">🤝</span> by Adarsh Goyal</p>
+                <a href="https://github.com/hackwhalla?tab=repositories" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <i class="fab fa-github"></i> Check this on Github
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Bottom Social Links (globally visible) -->
+    <div class="fixed-bottom-social-links">
+        <a href="https://github.com/hackwhalla?tab=repositories" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/adarsh-goyal-a35297230/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/mr.goyalll?igsh=aWM0NThlMXd5dXk3" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:goyaladarsh49@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
